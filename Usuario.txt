@@ -1,8 +1,7 @@
 drop table if exists User.user;
 
 create table User.user (
-	id int primary key auto_increment,
-    user_name varchar(200) not null,
+    user_name varchar(200) primary key not null,
     password varchar(200) not null,
     inactivate BOOLEAN,
     names varchar(200) not null,
@@ -13,8 +12,8 @@ create table User.user (
 
 
 insert into User.user 
-(id,		user_name,        password,		inactivate,		names,		last_names,		date,			position) values
-('1',		'Camilo1',       'abc123',		false,			'Camilo',	'Forero',		'12/03/2001',	'Auxiliar'),
-('2',		'Saminator',     'abc23',		true,			'Samir',	'Romero',		'13/06/2001',	'Gerente'),
-('3',		'Manuel123',     'abc321',		false,			'Manuel',	'Silva',		'14/07/2001',	'Auxiliar'),
-('4',		'JoseS44',       'abc111',		false,			'Jose',		'Varela',		'15/08/2001',	'Secretario');
+(user_name,        password,		inactivate,		names,		last_names,		date,			position) values
+('Camilo1',       'abc123',		false,			'Camilo',	'Forero',		'12/03/2001',	'Auxiliar'),
+('Saminator',     'abc23',		true,			'Samir',	'Romero',		'13/06/2001',	'Gerente'),
+('Manuel123',     'abc321',		false,			'Manuel',	'Silva',		'14/07/2001',	'Auxiliar'),
+('JoseS44',       'abc111',		false,			'Jose',		'Varela',		'15/08/2001',	'Secretario');
